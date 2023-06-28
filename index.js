@@ -35,7 +35,7 @@ bubble.style.setProperty("--left", Math.random() * 100 * plusMinus + "%");
 bubble.addEventListener("click", () => {
     bubble.remove();
     counter++;
-    counterTitle.textContent = counter;
+    counterTitle.textContent = counter + "🫧";
 });
 
 
