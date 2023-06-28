@@ -1,4 +1,10 @@
 
+const counterTitle = document.querySelector("h3");
+let counter = 0;
+
+
+
+
 const bubbleCreator = () => {
 //? Création de la bulle
 const bubble = document.createElement("span");
@@ -28,6 +34,8 @@ bubble.style.setProperty("--left", Math.random() * 100 * plusMinus + "%");
 //? Supprime la bulle au click
 bubble.addEventListener("click", () => {
     bubble.remove();
+    counter++;
+    counterTitle.textContent = counter;
 });
 
 
@@ -47,4 +55,4 @@ setTimeout(() => {
 setInterval(() => {
     bubbleCreator();
 }
-, 3020);
+, 420);
